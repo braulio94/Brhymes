@@ -1,4 +1,4 @@
-package cassule.braulio.com.brymes;
+package app.brhymes;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -17,10 +17,10 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
-    public void useAppContext() throws Exception {
+    public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cassule.braulio.com.brymes", appContext.getPackageName());
+        assertEquals("app.brhymes", appContext.getPackageName());
     }
 }

@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Brymes</string>
+    <string name="app_name">brhymes</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_lyric">LyricActivity</string>
 </resources>
