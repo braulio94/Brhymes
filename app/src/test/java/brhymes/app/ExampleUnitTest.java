@@ -1,4 +1,4 @@
-package app.brhymes;
+package brhymes.app;
 
 import org.junit.Test;
 
