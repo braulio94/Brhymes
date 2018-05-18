@@ -14,7 +14,11 @@
         style="@style/Widget.MaterialComponents.BottomAppBar"
         app:backgroundTint="@android:color/black"
         app:fabAlignmentMode="end"
-        />
+        >
+
+        <include layout="@layout/audio_player_layout"/>
+
+    </android.support.design.bottomappbar.BottomAppBar>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

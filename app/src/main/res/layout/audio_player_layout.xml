@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/audio_player_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/record_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/_start_duration"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/record_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="@string/_start_duration"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progressTint="@android:color/darker_gray"
+            android:thumbTint="@android:color/darker_gray"
+            android:layout_gravity="center_vertical"
+            android:thumbOffset="3dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

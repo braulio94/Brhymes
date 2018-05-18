@@ -17,13 +17,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (bottomAppBar.isFabAttached()){
-                    bottomAppBar.setFabAttached(false);
-                } else {
-                    bottomAppBar.setFabAttached(true);
-                }
+                //findViewById(R.id.record_duration).setVisibility(bottomAppBar.isFabAttached() ? View.VISIBLE : View.GONE);
+                bottomAppBar.setFabAttached(!bottomAppBar.isFabAttached());
             }
         });
-
     }
 }
