@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_anchor="@id/bar"
-        android:src="@drawable/ic_play"
+        android:src="@drawable/ic_play_pause"
         />
 
 </android.support.design.widget.CoordinatorLayout>
