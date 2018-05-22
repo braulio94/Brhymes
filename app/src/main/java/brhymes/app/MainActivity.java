@@ -14,11 +14,11 @@ import brhymes.app.player.PlayerAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private BottomAppBar bottomAppBar;
-    private AnimatedVectorDrawable play;
-    private AnimatedVectorDrawable pause;
-    private boolean playtopause = true;
-    private FloatingActionButton fab;
+    static BottomAppBar bottomAppBar;
+    static AnimatedVectorDrawable play;
+    static AnimatedVectorDrawable pause;
+    static boolean playtopause = true;
+    static FloatingActionButton fab;
 
     public static PlayerAdapter mPlayerAdapter;
 
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.fab:
-
                 animatePlayIcon();
                 if (mPlayerAdapter.isPlaying()) {
                     mPlayerAdapter.pause();
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void animatePlayIcon() {
+    public static void animatePlayIcon() {
         bottomAppBar.setFabAttached(!bottomAppBar.isFabAttached());
         AnimatedVectorDrawable drawable = playtopause ? play : pause;
         fab.setImageDrawable(drawable);

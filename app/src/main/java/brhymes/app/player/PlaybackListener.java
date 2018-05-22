@@ -8,6 +8,8 @@ import android.widget.SeekBar;
 import brhymes.app.MainActivity;
 import brhymes.app.R;
 
+import static brhymes.app.player.PlaybackInfoListener.State.*;
+
 public class PlaybackListener extends PlaybackInfoListener implements SeekBar.OnSeekBarChangeListener {
 
     int userSelectedPosition = 0;
@@ -39,6 +41,9 @@ public class PlaybackListener extends PlaybackInfoListener implements SeekBar.On
     public void onStateChanged(@State int state) {
         String stateToString = PlaybackInfoListener.convertStateToString(state);
         Log.d("PlaybackListener", "Playback State: " + stateToString);
+        if (state == COMPLETED || state == RESET){
+            MainActivity.animatePlayIcon();
+        }
     }
 
     @Override
