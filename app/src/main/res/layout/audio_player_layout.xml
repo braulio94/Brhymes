@@ -17,7 +17,8 @@
             android:layout_marginStart="40dp"
             android:text="@string/_start_duration"
             android:textSize="13sp"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/duration"
@@ -27,7 +28,8 @@
             android:layout_marginEnd="30dp"
             android:text="@string/_start_duration"
             android:textSize="13sp"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
     </RelativeLayout>
 
     <LinearLayout
