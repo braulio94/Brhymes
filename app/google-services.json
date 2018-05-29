@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "598084527964",
+    "firebase_url": "https://projectii-161618.firebaseio.com",
+    "project_id": "projectii-161618",
+    "storage_bucket": "projectii-161618.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598084527964:android:a9e7770595f29581",
+        "android_client_info": {
+          "package_name": "brhymes.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598084527964-48pae7v1q0h96576igb2f93c3u92rubr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "brhymes.app",
+            "certificate_hash": "c4b9b093abe5e21ec20a9a07824ed731185c148b"
+          }
+        },
+        {
+          "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOF6AXSbY7FVkQsQqC0dvbQTqDKSAS7aM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598084527964:android:4d3dfaac8c6b2a1c",
+        "android_client_info": {
+          "package_name": "cassule.braulio.com.brymes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598084527964-bm1l314qsv93ruma0v1affiv6s68n0ho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cassule.braulio.com.brymes",
+            "certificate_hash": "c4b9b093abe5e21ec20a9a07824ed731185c148b"
+          }
+        },
+        {
+          "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOF6AXSbY7FVkQsQqC0dvbQTqDKSAS7aM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598084527964-2moo8v97jqs500fqriv0ktgj7fvq4q7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
