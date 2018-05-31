@@ -4,9 +4,9 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.loopeer.cardstack.CardStackView;
-import com.loopeer.cardstack.StackAdapter;
 import brhymes.app.R;
+import brhymes.app.cardstackview.CardStackView;
+import brhymes.app.cardstackview.StackAdapter;
 import brhymes.app.model.Author;
 
 /**
@@ -20,19 +20,19 @@ public class AuthorsImageStackAdapter extends StackAdapter<Author> {
     }
 
     @Override
-    public void bindView(Author data, int position, CardStackView.ViewHolder holder) {
+    public void bindView(Author data, int position, StackAdapter.ViewHolder holder) {
         AuthorItemViewHolder authorViewHolder = (AuthorItemViewHolder) holder;
-        //authorViewHolder.authorImageView.setImageDrawable();
+        authorViewHolder.authorImageView.setImageDrawable(data.getImageId());
     }
 
 
     @Override
-    protected CardStackView.ViewHolder onCreateView(ViewGroup parent, int viewType) {
+    protected StackAdapter.ViewHolder onCreateView(ViewGroup parent, int viewType) {
         View view = getLayoutInflater().inflate(R.layout.author_image, parent, false);
         return new AuthorItemViewHolder(view);
     }
 
-    private class AuthorItemViewHolder extends CardStackView.ViewHolder {
+    private class AuthorItemViewHolder extends StackAdapter.ViewHolder {
 
         private ImageView authorImageView;
 
@@ -41,9 +41,5 @@ public class AuthorsImageStackAdapter extends StackAdapter<Author> {
             authorImageView = itemView.findViewById(R.id.author_image);
         }
 
-        @Override
-        public void onItemExpand(boolean b) {
-            //Do not expand this shit!
-        }
     }
 }

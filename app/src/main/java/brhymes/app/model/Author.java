@@ -17,4 +17,20 @@ public class Author {
         this.name = name;
         this.imageId = imageId;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Drawable getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(Drawable imageId) {
+        this.imageId = imageId;
+    }
 }

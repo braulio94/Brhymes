@@ -1,17 +1,19 @@
 package brhymes.app;
 
 import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.loopeer.cardstack.CardStackView;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import brhymes.app.adapters.AuthorsImageStackAdapter;
+import brhymes.app.cardstackview.CardStackView;
 import brhymes.app.model.Author;
 import brhymes.app.player.MediaPlayerHolder;
 import brhymes.app.player.PlaybackListener;
@@ -48,15 +50,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void createStackAuthorImages(){
         ArrayList<Author> authors = new ArrayList<>();
         for (int items = 0; items < 9; items++) {
-            Author author = new Author("Braulio " + items, getDrawable(R.drawable.image0001));
+            Author author = new Author("Braulio " + items, getDrawable(getResId("image000" + items, R.drawable.class)));
             authors.add(author);
         }
         mAuthorsImageStack = findViewById(R.id.stackview_main);
-        mAuthorsImageStack.setViewScrollX(1);
         mAuthorsAdapter = new AuthorsImageStackAdapter(this);
         mAuthorsImageStack.setAdapter(mAuthorsAdapter);
         mAuthorsAdapter.updateData(authors);
 
+    }
+
+    public static int getResId(String resName, Class<?> c) {
+
+        try {
+            Field idField = c.getDeclaredField(resName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
     }
 
     @Override
