@@ -126,7 +126,7 @@ public class CardStackView extends LinearLayout {
             final LayoutParams lp = (LayoutParams) child.getLayoutParams();
             childLeft += lp.leftMargin;
             if (i != 0) {
-                childLeft -= mOverlapGaps * 2;
+                childLeft -= mOverlapGaps * 1.5;
                 child.layout(childLeft, childTop, childLeft + childWidth, childTop + childHeight);
             } else {
                 child.layout(childLeft, childTop, childLeft + childWidth, childTop + childHeight);

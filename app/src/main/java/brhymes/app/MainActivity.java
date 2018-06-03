@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void createStackAuthorImages(){
         ArrayList<Author> authors = new ArrayList<>();
-        for (int items = 0; items < 9; items++) {
+        for (int items = 0; items < 6; items++) {
             Author author = new Author("Braulio " + items, getDrawable(getResId("image000" + items, R.drawable.class)));
             authors.add(author);
         }

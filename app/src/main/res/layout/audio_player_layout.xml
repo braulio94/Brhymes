@@ -45,8 +45,8 @@
             android:layout_height="wrap_content"
             android:paddingStart="0dp"
             android:paddingEnd="0dp"
-            android:progressTint="@android:color/darker_gray"
-            android:thumbTint="@android:color/darker_gray"
+            android:progressTint="@android:color/white"
+            android:thumbTint="@android:color/white"
             android:layout_gravity="center_vertical"
             android:thumbOffset="3dp"/>
     </LinearLayout>

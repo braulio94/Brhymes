@@ -5,7 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import brhymes.app.R;
-import brhymes.app.cardstackview.CardStackView;
 import brhymes.app.cardstackview.StackAdapter;
 import brhymes.app.model.Author;
 

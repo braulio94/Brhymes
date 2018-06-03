@@ -9,12 +9,22 @@
     <brhymes.app.cardstackview.CardStackView
         android:id="@+id/stackview_main"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:clipToPadding="false"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-        android:paddingTop="12dp"
+        android:paddingTop="10dp"
         android:gravity="center_vertical"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lyric_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        tools:listitem="@layout/lyric_line_item">
+
+    </android.support.v7.widget.RecyclerView>
 
     <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bar"
@@ -22,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         style="@style/Widget.MaterialComponents.BottomAppBar"
-        app:backgroundTint="@android:color/black"
+        app:backgroundTint="@color/colorPrimary"
         app:fabAlignmentMode="end"
         >
 
