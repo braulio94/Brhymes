@@ -7,7 +7,7 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class StackAdapter<T> extends CardStackView.Adapter<StackAdapter.ViewHolder> {
+public abstract class StackAdapter<T> extends HorizontalCardStackView.Adapter<StackAdapter.ViewHolder> {
 
     private final Context mContext;
     private final LayoutInflater mInflater;

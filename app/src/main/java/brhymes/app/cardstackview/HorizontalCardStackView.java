@@ -15,7 +15,7 @@ import java.util.List;
 
 import brhymes.app.R;
 
-public class CardStackView extends LinearLayout {
+public class HorizontalCardStackView extends LinearLayout {
 
 
 
@@ -28,29 +28,29 @@ public class CardStackView extends LinearLayout {
     private int mShowHeight;
     private List<StackAdapter.ViewHolder> mViewHolders;
 
-    public CardStackView(Context context) {
+    public HorizontalCardStackView(Context context) {
         this(context, null);
     }
 
-    public CardStackView(Context context, AttributeSet attrs) {
+    public HorizontalCardStackView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CardStackView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public HorizontalCardStackView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr, 0);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public CardStackView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public HorizontalCardStackView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs, defStyleAttr, defStyleRes);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 
-        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.CardStackView, defStyleAttr, defStyleRes);
-        setOverlapGaps(array.getDimensionPixelSize(R.styleable.CardStackView_stackOverlapGaps, dp2px(10)));
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.HorizontalCardStackView, defStyleAttr, defStyleRes);
+        setOverlapGaps(array.getDimensionPixelSize(R.styleable.HorizontalCardStackView_stackOverlapGaps, dp2px(10)));
         array.recycle();
         mViewHolders = new ArrayList<>();
         initScroller();
@@ -168,8 +168,8 @@ public class CardStackView extends LinearLayout {
         public LayoutParams(Context c, AttributeSet attrs) {
             super(c, attrs);
 
-            TypedArray array = c.obtainStyledAttributes(attrs, R.styleable.CardStackView);
-            mHeaderHeight = array.getDimensionPixelSize(R.styleable.CardStackView_stackHeaderHeight, -1);
+            TypedArray array = c.obtainStyledAttributes(attrs, R.styleable.HorizontalCardStackView);
+            mHeaderHeight = array.getDimensionPixelSize(R.styleable.HorizontalCardStackView_stackHeaderHeight, -1);
         }
 
         public LayoutParams(int width, int height) {

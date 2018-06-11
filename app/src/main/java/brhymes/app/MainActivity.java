@@ -1,7 +1,6 @@
 package brhymes.app;
 
 import android.graphics.drawable.AnimatedVectorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.widget.FloatingActionButton;
@@ -13,7 +12,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import brhymes.app.adapters.AuthorsImageStackAdapter;
-import brhymes.app.cardstackview.CardStackView;
+import brhymes.app.cardstackview.HorizontalCardStackView;
 import brhymes.app.model.Author;
 import brhymes.app.player.MediaPlayerHolder;
 import brhymes.app.player.PlaybackListener;
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     static AnimatedVectorDrawable pause;
     static boolean playtopause = true;
     static FloatingActionButton fab;
-    private CardStackView mAuthorsImageStack;
+    private HorizontalCardStackView mAuthorsImageStack;
     private AuthorsImageStackAdapter mAuthorsAdapter;
 
     public static PlayerAdapter mPlayerAdapter;
